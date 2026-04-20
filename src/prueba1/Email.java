@@ -14,16 +14,24 @@ public class Email{
         this.read=false;
     }
     
-    public String getSender() {return sender;}
-    public String getSubject() {return subject;}
-    public String getBody() { return body;}
-    public boolean isRead() {return read;}
-    
-    public void markAsRead(){
-       read = true; 
+    public String getSender(){
+        return sender;
+    }
+    public String getSubject(){
+        return subject;
+    }
+    public String getBody(){
+        return body;
+    }
+    public boolean isRead(){
+        return read;
     }
     
-    public void print() {
+    public void markAsRead(){
+       read=true; 
+    }
+    
+    public void print(){
         System.out.println("DE: "+sender);
         System.out.println("ASUNTO: "+subject);
         System.out.println(body);
